@@ -21,7 +21,7 @@ public class Solution {
         }
         inorder(root);
         int n = nodes.size();
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n - 1; i++) {
             TreeLinkNode cur = nodes.get(i);
             if (pNode == cur) {
                 return nodes.get(i + 1);
